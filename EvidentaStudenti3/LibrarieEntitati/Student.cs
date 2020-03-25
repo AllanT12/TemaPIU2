@@ -21,13 +21,13 @@ namespace LibrarieEntitati
         {
             note = new int[4][];
             string sir = Console.ReadLine();
-            note[0] = new int[sir.Length];
+            note[0] = new int[5];
             sir = Console.ReadLine();
-            note[1] = new int[sir.Length];
+            note[1] = new int[10];
             sir = Console.ReadLine();
-            note[2] = new int[sir.Length];
+            note[2] = new int[20];
             sir = Console.ReadLine();
-            note[3] = new int[sir.Length];
+            note[3] = new int[25];
             int i = 0,j=0;
             
             string[] _note = sir.Split(' ');

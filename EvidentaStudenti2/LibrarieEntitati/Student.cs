@@ -46,7 +46,7 @@ namespace LibrarieEntitati
             }
 
         }
-        public void Setnote()
+        public void Setnote(string sir)
         {
             note = new int[4][];
             note[0] = new int[15];
@@ -54,7 +54,6 @@ namespace LibrarieEntitati
             note[2] = new int[15];
             note[3] = new int[15];
             int i = 0,j=0;
-            string sir = Console.ReadLine();
             string[] _note = sir.Split(' ');
             p = sir.Length;
             foreach(var nota in _note)
@@ -69,6 +68,27 @@ namespace LibrarieEntitati
                 {
                     note[i][j] = Convert.ToInt32(nota);
                     j++;
+                }
+            }
+        }
+        public void SSetnote(string[] sir)
+        {
+            note = new int[4][];
+            note[0] = new int[15];
+            note[1] = new int[15];
+            note[2] = new int[15];
+            note[3] = new int[15];
+            int i = 0, j = 0;
+            string[][] _note = new string[4][];
+            for(int p=0;p<4;p++)
+            _note[p]= sir[p].Split(' ');
+            p = sir.Length;
+            foreach (var nota in _note)
+            {
+                {
+                    note[i][j] = Convert.ToInt32(nota);
+                    j++;
+                    i++;
                 }
             }
         }
