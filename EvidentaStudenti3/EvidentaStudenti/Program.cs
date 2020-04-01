@@ -17,9 +17,9 @@ namespace ManagementStudenti
                     switch (c = Console.ReadLine())
                     {
                         case "s":
-                            s.Setnote();
-                            break;
-                        case "c":
+                            Console.WriteLine("scrieti notele despartite prin splatiu, iar anii despartiti prin spatiu si virgula");
+                            string sir = Console.ReadLine();
+                            s.Setnote(sir);
                             break;
                         case "a":
                             s.ConversieLaSir();

@@ -23,7 +23,7 @@ namespace ManagementStudenti
                         case "t":
                             s.SetNote();
                             break;
-                        case "c":s.SetNote();
+                        case "c":s.SSetnote(args);
                             break;
                         case "a":
                             s.ConversieLaSir();
